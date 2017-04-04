@@ -45,7 +45,7 @@ return [
             'connection' => 'default',
         ],
 
-        'log' => [
+        'log' => [  
             'driver' => 'log',
         ],
 
