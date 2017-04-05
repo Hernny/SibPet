@@ -10,5 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/auth0/callback', '\Auth0\Login\Auth0Controller@callback');
+Route::get('/user', function (Request $request) {
+    return $request->user();
+})->middleware('auth:api');
