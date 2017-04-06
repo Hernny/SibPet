@@ -13,3 +13,7 @@
 Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:api');
+
+route::get('/hello',function (){
+	return "hola";
+})
